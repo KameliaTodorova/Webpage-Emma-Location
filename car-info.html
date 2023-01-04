@@ -1,0 +1,225 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="SHORTCUT ICON" href="favicon.ico" />
+		<title>Information - Emma Location</title>
+		<link rel="stylesheet" href="js/owl_carousel/assets/owl.carousel.min.css">
+		<link rel="stylesheet" href="js/owl_carousel/assets/owl.theme.default.min.css">
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/form.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+		<script src="js/jquery-3.5.1.min.js"></script>
+		<script src="js/owl_carousel/owl.carousel.min.js"></script>
+		<script src="js/functions.js"></script>
+	</head>
+	<body>
+		<div class="page-wrap">
+			<header class="main-header">
+				<a href="#" class="menu-toggle" id="menu-toggle">Меню</a>
+				<a href="index.html" class="logo logo-header"><img src="images/logo-header.png" alt="logo" /></a>
+				<div class="change-language">
+					<a href="#">ENGLISH</a>
+				</div>
+			</header>
+			<nav class="main-menu main-menu-inside" id="main-menu">
+				<ul>
+					<li><a href="#">НАЧАЛО</a></li>
+					<li class="active"><a href="#">АВТОМОБИЛИ</a></li>
+					<li><a href="#">ЗА НАС</a></li>
+					<li><a href="#">КОНТАКТИ</a></li>
+				</ul>
+			</nav>
+			<div class="webpage-path webpage-path-inside">
+				<ol>
+					<li><a href="#">Начало</a></li>
+					<li><a href="#">Автомобили</a></li>
+					<li><a href="#">Volkswagen Tiguan 2.0  TDI</a></li>
+				</ol>
+			</div>
+			<section class="car-info">
+				<h2 class="page-title">Volkswagen Tiguan 2.0  TDI</h2>
+				<div class="owl-carousel owl-theme">
+					<a href="images/article-1.png" class="img" data-fancybox="gallery" data-caption="Caption for single image"><img src="images/article-1.png" alt="" /></a>
+					<a href="images/article-2.png" class="img" data-fancybox="gallery" data-caption="Caption for single image"><img src="images/article-2.png" alt="" /></a>
+					<a href="images/article-3.png" class="img" data-fancybox="gallery" data-caption="Caption for single image"><img src="images/article-3.png" alt="" /></a>
+					<a href="images/article-1.png" class="img" data-fancybox="gallery" data-caption="Caption for single image"><img src="images/article-1.png" alt="" /></a>
+					<a href="images/article-2.png" class="img" data-fancybox="gallery" data-caption="Caption for single image"><img src="images/article-2.png" alt="" /></a>
+					<a href="images/article-3.png" class="img" data-fancybox="gallery" data-caption="Caption for single image"><img src="images/article-3.png" alt="" /></a>
+				</div>
+				<div class="info-details">
+					<p>Цена от <span class="red-price">&euro;17.00</span> на ден</p>
+					<p>Депозит: &euro;200.00</p>
+					<div class="car-details">
+						<p><i class="fa fa-user"></i><span class="blue-details">4+1</span></p>
+						<p><i class="fas fa-fan"></i><span class="blue-details">Климатроник</span></p>
+						<p><i class="fas fa-gas-pump"></i><span class="blue-details">Дизел</span></p>
+						<p><i class="fas fa-tachometer-alt"></i><span class="blue-details">Автоматик</span></p>
+						<p><i class="fas fa-tint"></i><span class="blue-details">1510 литра</span></p>
+						<p><i class="fas fa-oil-can"></i><span class="blue-details">Разход на гориво</span></p>
+					</div>
+					<p class="red-text">Във връзка с организацията на работа, е препоръчително резервацията да бъде извършена най-малко 8 часа преди наемането на автомобила. 
+					Работното време в делнични дни е от 09.30 до 19.30 ч. освен ако няма предварителна резервация за друг час.</p>
+					<div class="button-reserve">
+						<a href="form.html" data-morphing class="button btn-form">РЕЗЕРВИРАЙ</a>
+					</div>
+					
+					<link rel="stylesheet" href="js/fancybox3/jquery.fancybox.min.css">
+					<script src="js/fancybox3/jquery.fancybox.min.js"></script>
+					<script>
+					$( document ).ready(function() {
+						$('.btn-form').click(function(e){
+							e.preventDefault();
+							var url = $(this).attr('href');
+							//console.log(1);
+							$.fancybox.open({
+								src  : url,
+								type : 'iframe',
+								opts : {
+									afterShow : function( instance, current ) {
+										console.info( 'done!' );
+									},
+									baseClass: "fancybox-form",
+									arrows: false,
+									infobar: false,
+									buttons: ["close"]
+								}
+							});
+						});
+						var lF = $('.car-info-more ul li.active a').attr('rel');
+						$('.car-info-more > div.'+lF).addClass('t-open');
+						$('.car-info-more ul li a').click(function(e){
+							e.preventDefault();
+							var eC = $(this).attr('rel');
+							var lF = $('.car-info-more ul li').removeClass('active');
+							$('.car-info-more > div').removeClass('t-open');
+							$('.car-info-more > div.'+eC).addClass('t-open');
+							$(this).parent('li').addClass('active');
+						});
+					});
+					</script>
+					<style>
+					.fancybox-form .fancybox-content{ background: none; }
+					.fancybox-form .fancybox-bg{ background: #292d40; }
+					.fancybox-form.fancybox-is-open .fancybox-bg{ opacity: .96; }
+					.fancybox-form .fancybox-button{ background: none; }
+					.fancybox-form .fancybox-button--close{ width: 70px; height: 70px; color: #fff; }
+					
+					.car-info-more{ min-height: 345px; }
+					.car-info-more > div{ 
+						min-height: 0; height: 0; overflow: hidden; margin: 0; 
+						 border-top: 0px solid; border-bottom: 0px solid;
+					}
+					.car-info-more > div.t-open{ height: auto; border-top: 1px solid; border-bottom: 1px solid; }
+					</style>
+				</div>
+			</section>
+			<section class="car-info-more">
+				<ul class="info-tabs">
+					<li class="active"><a href="#" rel="fact-1">За автомобила</a></li>
+					<li><a href="#" rel="fact-2">Общи условия</a></li>
+					<li><a href="#" rel="fact-3">Цени</a></li>
+				</ul>
+				<div class="fact-1">
+					<p>Volkswagen Tiguan  под наем – миниван, 4+1 места, дизел, 6-степенна автоматична скоростна кутия, климатик, радио 
+				и CD разход на гориво: градско –8 л/100 км, извънградско – 6.00 л/ 100 км. Първа рег. 2012 г , 140 к.с.  Важно- Не се предлага за офроуд, 
+				лов или управление по не рагламентирани пътища (черни пътища) Максимална допустима скрост- 140 км/ч по автомагистрала.</p>
+				</div>
+				<div class="fact-2">
+					<div class="column">
+						<p class="bold">Наемната цена е на ден и включва автомобила, оборудване към него, както и:</p>
+						<ul class="fact-2-info">
+							<li>Годишен винетен  стикер за България</li>
+							<li>Гражданска отговорност</li>
+							<li>Неограничени километри с колата под наем </li>
+							<li>Без такса за промяна или отмяна на резервация - до 72 часа (три дни) преди началото на резервацията</li>
+							<li>Без такса за извън работно време</li>
+							<li>До 2 допълнителни шофьора - без такса</li>
+							<li>БЕЗПЛАТНА BG пътна карта</li>
+							<li>БЕЗПЛАТНА ДЕНОНОЩНА ДОСТАВКА НА КОЛАТА ПОД НАЕМ В СОФИЯ - за наемен период 5+ дни</li>
+							<li>За наемен период от три или четири дни - 15 евро еднократно плащане за доставка на ваш адрес</li>
+							<li>24 часа телефонна връзка (при възникнали въпроси относно наетия автомобил)</li>
+							<li>За резервации през сайта 24/7 или на  Тел/Viber/WhatsApp- +359 888 777 927 от <span class="red-text bold">09.30 ч.
+							</span> до <span class="red-text bold">19.30 ч.<span></li>
+						</ul>
+						<p>Възможна доставка или издаване на автомобила от/до всяко летище или населено място в България.Автомобилът се дава под наем
+						само след подписани договор за наем и приемно-предавателен протокол и предоставени от наемателя валидни лична карта и шофьорска книжка.</p>
+					</div>
+					<div class="column">
+						<p>Volkswagen Tiguan  под наем – миниван, 4+1 места, дизел, 6-степенна автоматична скоростна кутия, климатик, радио 
+				и CD разход на гориво: градско –8 л/100 км, извънградско – 6.00 л/ 100 км. Първа рег. 2012 г , 140 к.с.  Важно- Не се предлага за офроуд, 
+				лов или управление по не рагламентирани пътища (черни пътища) Максимална допустима скрост- 140 км/ч по автомагистрала.</p>
+						<ul class="fact-2-info">
+							<li>Годишен винетен  стикер за България</li>
+							<li>Гражданска отговорност</li>
+							<li>Неограничени километри с колата под наем </li>
+							<li>Без такса за промяна или отмяна на резервация - до 72 часа (три дни) преди началото на резервацията</li>
+							<li>Без такса за извън работно време</li>
+							<li>До 2 допълнителни шофьора - без такса</li>
+							<li>БЕЗПЛАТНА BG пътна карта</li>
+							<li>БЕЗПЛАТНА ДЕНОНОЩНА ДОСТАВКА НА КОЛАТА ПОД НАЕМ В СОФИЯ - за наемен период 5+ дни</li>
+							<li>За наемен период от три или четири дни - 15 евро еднократно плащане за доставка на ваш адрес</li>
+							<li>24 часа телефонна връзка (при възникнали въпроси относно наетия автомобил)</li>
+							<li>За резервации през сайта 24/7 или на  Тел/Viber/WhatsApp- +359 888 777 927 от <span class="red-text bold">09.30 ч.
+							</span> до <span class="red-text bold">19.30 ч.<span></li>
+						</ul>
+					</div>
+				</div>
+				<div class="fact-3">
+					<h1>Heading 1</h1>
+					<h2>Heading 2</h2>
+					<h3>Heading 3</h3>
+					<h4>Heading 4</h4>
+					<h5>Heading 5</h5>
+					<h6>Heading 6</h6>
+				<div>
+			</section>
+			<section class="contacts clearfix">
+				<div class="image-canvas">
+					<img src="images/map.png" alt="map" />
+				</div>
+				<div class="contact-details">
+					<a href="index.html" class="small-logo"><img src="images/logo-small.png" alt="small-logo" /></a>
+					<div class="address">
+						<h3 class="contacts-title">ЗА ВРЪЗКА С НАС:</h3>
+						<p>Телефон, Viber, WhatsApp:</p>
+						<p class="phone">
+							<a href="tel:+359 877 888 977">00359 877 888 977</a>
+						</p>
+						<p>E-mail:
+							<a href="mailto:emmalocation@gmail.com" class="e-mail">emmalocation@gmail.com</a>
+						</p>
+						<p>Aдрес: гр. София, кв. Левски</p>
+						<p>ул. „Кап. Райчо Николов“ №3а</p>
+						<div class="followus">
+							<a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+							<a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+							<a href="#"><i class="fab fa-youtube"></i> YouTube</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<footer class="main-footer">
+				<div class="payment">
+					<img src="images/payment-1.png" alt="card" class="card" />
+					<img src="images/payment-2.png" alt="bank" class="bank" />
+				</div>
+				<nav class="alt-menu">
+					<ul>
+						<li><a href="#">НАЧАЛО</a></li>
+						<li><a href="#">АВТОМОБИЛИ</a></li>
+						<li><a href="#">ЗА НАС</a></li>
+						<li><a href="#">КОНТАКТИ</a></li>
+						<li><a href="#">ENGLISH</a></li>
+					</ul>
+				</nav>
+				<div class="copyright">&copy; Emma Location 2020. Всички права запазени</div>
+				<div class="artlogica"> Уеб дизайн и изработка:
+					<a href="#" class="createdby"><img src="images/artlogica.png" alt="artlogica" /></a>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>

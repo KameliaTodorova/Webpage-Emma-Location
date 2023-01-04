@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="bg-BG">
+	<head>
+		<meta charset="utf-8">
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
+		<link rel="SHORTCUT ICON" href="favicon.ico" />
+		<title>Form</title>
+		<link rel="stylesheet" href="js/owl_carousel/assets/owl.carousel.min.css">
+		<link rel="stylesheet" href="js/owl_carousel/assets/owl.theme.default.min.css">
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/form.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+		<script src="js/jquery-3.5.1.min.js"></script>
+		<script src="js/owl_carousel/owl.carousel.min.js"></script>
+		<script src="js/functions.js"></script>
+	</head>
+	<body class="clearfix blue-form">
+		<section class="form-content clearfix">
+			<h1>Резервирай автомобил</h1>
+			<form name="feedback" action="?" method="POST" class="page-wrap  clearfix">
+					<div class="field">
+						<label class="label">Място на вземане
+							<select name=”sortby”>
+								<option value="recent">--</option>
+								<option value="place">София</option>
+								<option value="place">Пловдив</option>
+								<option value="place">Варна</option>
+								<option value="place">Бургас</option>
+								<option value="place">Стара Загора</option>
+							</select>
+						</label>
+						<label class="label">Място на връщане
+							<select name=”sortby”>
+								<option value="recent">--</option>
+								<option value="place">София</option>
+								<option value="place">Пловдив</option>
+								<option value="place">Варна</option>
+								<option value="place">Бургас</option>
+								<option value="place">Стара Загора</option>
+							</select>
+						</label>
+					</div>
+					<div class="field">
+						<label class="label">Дата на вземане
+							<select name=”sortby”>
+								<option value="recent">--</option>
+								<option value="day">понеделник</option>
+								<option value="day">вторник</option>
+								<option value="day">сряда</option>
+								<option value="day">четвъртък</option>
+								<option value="day">петък</option>
+							</select>
+						</label>
+						<label class="label">Дата на връщане
+							<select name=”sortby”>
+								<option value="recent">--</option>
+								<option value="day">понеделник</option>
+								<option value="day">вторник</option>
+								<option value="day">сряда</option>
+								<option value="day">четвъртък</option>
+								<option value="day">петък</option>
+							</select>
+						</label>
+					</div>
+					<div class="field">
+						<label class="label">Час на вземане
+							<select name=”sortby”>
+								<option value="recent">--</option>
+								<option value="hour">12ч.</option>
+								<option value="hour">13ч.</option>
+								<option value="hour">14ч.</option>
+								<option value="hour">15ч.</option>
+								<option value="hour">16ч.</option>
+							</select>
+						</label>
+						<label class="label">Час на връщане
+							<select name=”sortby”>
+								<option value="recent">--</option>
+								<option value="hour">12ч.</option>
+								<option value="hour">13ч.</option>
+								<option value="hour">14ч.</option>
+								<option value="hour">15ч.</option>
+								<option value="hour">16ч.</option>
+							</select>
+						</label>
+					</div>
+					<p>Автомобилът е зает за избрания период. <a href="">Направете запитване</a> за този автомобил или 
+					изберете друг <a href="">свободен автомобил.</a></p>
+					<div class="button-search">
+						<input type="submit" name="btnsubmit" class="button-submit" value="Резервирай" />
+					</div>
+					
+				</form>
+		</section>
+		<section class="form-content form-content-second">
+			<h1>Моля, попълнете вашите данни<br /> за финализиране на резервацията</h1>
+			<form name="feedback" action="?" method="POST" class="page-wrap  clearfix">
+					<div class="field">
+						<label class="label">Име<span class="star">*</span>
+							<input type="text" name="name" value="" />
+						</label>
+						<label class="label">Фамилия<span class="star">*</span>
+							<input type="text" name="family-name" value="" />
+						</label>
+					</div>
+					<div class="field">
+						<label class="label">Телефон<span class="star">*</span>
+							<input type="text" name="phone" value="" />
+						</label>
+						<label class="label">E-mail<span class="star">*</span>
+							<input type="text" name="phone" value="" />
+						</label>
+					</div>
+					<label class="label">Коментар<span class="star">*</span>
+						<textarea name="desc">Моля, уточнете номер на полет - ако сте избрали взимане от летище, или точен адрес - ако сте избрали взимане от Ваш адрес.</textarea>
+					</label>
+					<span class="check"><input type="checkbox" /> Желая да ми бъде издадена фактура.</span>
+					<span class="check"><input type="checkbox" /> Запознат съм и се съгласявам с условията за наемане на автомобил и политиката за поверителност.</span>
+					<div class="button-search">
+						<input type="submit" name="btnsubmit" class="button-submit" value="Продължи" />
+					</div>
+				</form>
+		</section>
+		<section class="form-content form-content-third">
+			<h1>Избраният от вас<br />автомобил</h1>
+			<div class="column">
+				<h3>Volkswagen Tiguan</h3>
+				<div class="car-details">
+					<p><i class="fa fa-user"></i><span class="blue-details">4+1</span></p>
+					<p><i class="fas fa-fan"></i><span class="blue-details">Климатроник</span></p>
+					<p><i class="fas fa-gas-pump"></i><span class="blue-details">Дизел</span></p>
+					<p><i class="fas fa-tachometer-alt"></i><span class="blue-details">Автоматик</span></p>
+					<p><i class="fas fa-tint"></i><span class="blue-details">1510 литра</span></p>
+					<p><i class="fas fa-oil-can"></i><span class="blue-details">Разход на гориво</span></p>
+				</div>
+				<div class="button-search">
+					<input type="submit" name="btnsubmit" class="button-submit button-change" value="Промени" />
+				</div>
+				<p>Място на взимане:</p>
+				<p><span class="big-date">20.11.2020 г.</span> - 10:00 ч.</p>
+				<p>Летище София (Терминал 2)</p>
+				<div class="button-search">
+					<input type="submit" name="btnsubmit" class="button-submit button-change" value="Промени" />
+				</div>
+				<p>Място на връщане:</p> 
+				<p><span class="big-date">29.11.2020 г.</span> - 10:00 ч.</p>
+				<p>Летище София (Терминал 2)</p>
+				<div class="button-search">
+					<input type="submit" name="btnsubmit" class="button-submit button-change" value="Промени" />
+				</div>
+			</div>
+			<div class="column">
+				<h3>Плащане:</h3>
+				<p>Наем за 9 дни:  &euro;153.00</p>
+				<p>Супер застраховка: &euro;16.00</p>
+				<p>&nbsp;</p>
+				<p>Крайна цена: <span class="big-price">&euro;169.00</span></p>
+				<p>Депозит: &euro;200.00<span class="star">*</span></p>
+				<div class="button-search">
+					<input type="submit" name="btnsubmit" class="button-submit button-pay" value="Плати" />
+				</div>
+			</div>
+		</section>
+  	</body>
+</html>
+    					

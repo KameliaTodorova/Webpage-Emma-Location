@@ -1,0 +1,180 @@
+@charset "utf-8";
+@import url ("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet");
+
+*, *:before, *:after {margin: 0; padding: 0; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+html {width: 100%; height: 100%; background: #fff; font: normal 15px/24px 'Open Sans', sans-serif; color: #231f20; text-align: left; 
+overflow-x: hidden;}
+body {width: 100%;}
+img {max-width: 100%;}
+a img {border: 0px solid;}
+a {text-decoration: none; outline: none; color: #d72727;}
+a:hover {text-decoration: underline;}
+p {margin: 15px 0;}
+ul, ol {padding-left: 25px; margin: 15px 0;}
+h1,h2,h3,h4,h5,h6 {font-family: 'Open Sans', sans-serif; margin: 15px 0;}
+h1 {font-size: 2.5em; line-height: 1.3em;}
+h2 {font-size: 1.7em; line-height: 1.3em;}
+h3 {font-size: 1.6em; line-height: 1.3em;}
+.clearfix:after {content: ''; display: block; clear: both;}
+.page-wrap {margin: 0 auto; max-width: 1260px; width: 100%;}
+
+/*Header*/
+.change-language {position: absolute; top: 40px; right: 65px; z-index: 1;}
+.change-language a {color: #fff; font-weight: 600; text-transform: uppercase; font-size: 15px; position: relative; background-color: #b60526;}
+.change-language:hover a {text-decoration: none;}
+.change-language:hover:before {content: ""; position: absolute; display: block; top: -13px; height: 50px; width: 50px;
+    border: 1px solid #fff; border-radius: 50%; right: 6px; z-index: -1;}
+.change-language:hover:after {
+	content: "";
+    position: absolute;
+    display: block;
+    top: -7px;
+    height: 37px;
+    width: 37px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    right: 12.5px;
+    z-index: -1;}
+.main-header .logo {display: block;}	
+.main-header .logo img {position: absolute; display: block; top: 25px; left: 65px; z-index: 2;}
+.main-header .logo-header img {top: 0;}
+
+/*Main-menu*/
+.main-menu {text-transform: uppercase; background-color: #b60526; position: absolute; width: 100%; top: 0px; margin: 0 auto; max-width: 1260px;}
+.main-menu ul {margin: 0px; padding-left: 0;}
+.main-menu ul li {display: inline-block; position: relative; margin: 0 15px;} /*or margin: 0 20px;*/
+.main-menu ul li:first-child {margin-left: 260px;}
+.main-menu-inside ul li:first-child {margin-left: 170px;}
+.main-menu ul li a {display: block; padding: 0 10px; line-height: 100px; color: #fff; font-weight: bold; font-size: 15px;}
+.main-menu ul li:hover a, .main-menu ul li.active a {background: #1f1a30; text-decoration: none;}
+.main-menu ul li:hover a:before, .main-menu ul li.active a:before {content: ""; position: absolute; display: block; left: -25px; bottom: 0px;
+    width: 0; height: 0px; border-left: 25px solid transparent; border-right: 0px solid transparent; border-top: 100px solid #1f1a30;}
+.main-menu ul li:hover a:after, .main-menu ul li.active a:after {content: ""; position: absolute; display: block; left: -22px; bottom: 0px; width: 10px;
+    height: 100px; transform: skew(14deg); background: rgba(22,27,49,0.38);}
+.main-menu ul li:hover:before,  .main-menu ul li.active:before { content: ""; position: absolute; display: block; right: -25px; bottom: 0px; width: 0;
+    height: 0px; border-left: 0 solid transparent; border-right: 25px solid transparent; border-bottom: 100px solid #1f1a30;}
+.main-menu ul li:hover:after,  .main-menu ul li.active:after {content: ""; position: absolute; display: block; right: -22px; bottom: 0;
+    width: 10px; height: 100px; transform: skew(14deg); background: rgba(22,27,49,0.38);}
+
+/*Section - Rent a car*/
+.rent-a-car {background-image: url("../images/background-rent.png"); background-repeat: no-repeat; background-size: cover;
+background-position: center bottom; height: 455px; width: 100%; position: relative; margin-top: 110px; color: #fff;}
+.rent-a-car-inside {background-image: url("../images/background-rent2.png"); background-repeat: no-repeat; background-size: cover;
+background-position: center bottom; height: 250px; width: 100%; position: relative; color: #fff;}
+.rent-a-car form, .rent-a-car-inside form {float: right; width: 504px; height: 455px; background-color: rgba(22,27,49,0.88); position: relative; 
+padding-right: 20px;}
+.rent-a-car-inside form {height: 250px; width: 882px; position: relative; padding-left: 20px;}
+.rent-a-car form h1, .rent-a-car-inside form h1 {margin-top: 20px; text-align: center; font-weight: 900; font-size: 30px;}
+.rent-a-car-inside form h1 {font-size: 24px; text-align: left; margin-left: 10px;}
+.rent-a-car form .field, .rent-a-car-inside form .field {float: left; width: 50%; padding: 0 10px; margin-bottom: 10px; position: relative;}
+.rent-a-car-inside form .field {width: 33.33%;}
+.rent-a-car form .field select {width: 100%; height: 35px; margin: 15px 0;}
+.rent-a-car-inside form .field select {width: 100%; height: 30px; margin: 5px 0;}
+.rent-a-car form .button-search{display: block; text-align: center;}
+.rent-a-car form .button-search a, .rent-a-car-inside form .button-search a {padding: 10px 20px; background-color: #b60526; color: #fff; 
+font-weight: bold; font-size: 16px; text-decoration: none;}
+.rent-a-car form .button-search a:hover {background-color: #950b25;}
+.rent-a-car-inside form .button-search {float: right; padding-right: 10px;}
+.rent-a-car-inside form .button-search a {display: block; font-size: 14px; padding: 5px 20px;}
+.rent-a-car-inside form .button-search a:hover {background-color: #950b25;}
+.rent-a-car form p {text-align: center;}
+.rent-a-car form p span {color: #b60526;}
+.rent-a-car form:before {content: ''; display: block; clear: both; position: absolute; top: 220px; left: -45px; z-index: 2; width: 0; height: 0;
+ border-top: 235px solid rgba(22,27,49,0.88); border-left: 45px solid transparent;}
+.rent-a-car form:after {content: '';
+    display: block;
+    clear: both;
+    position: absolute;
+    top: 0;
+    left: -141px;
+    z-index: 5;
+    width: 141px;
+    height: 0;
+    border-top: 220px solid rgba(22,27,49,0.88);
+    border-left: 66px solid transparent;}
+.rent-a-car:before {    
+	content: '';
+    display: block;
+    clear: both;
+    position: absolute;
+    top: 0px;
+    right: 612px;
+    z-index: 4;
+    width: 35px;
+    height: 220px;
+    transform: skew(17deg);
+    background: rgba(22,27,49,0.38);}
+.rent-a-car:after {content: '';
+    display: block;
+    clear: both;
+    position: absolute;
+    top: 220px;
+    right: 526px;
+    z-index: 1;
+    width: 30px;
+    height: 235px;
+    transform: skew(10.8deg);
+    background: rgba(22,27,49,0.38);}
+.rent-a-car-inside form:before {
+	content: '';
+    display: block;
+    clear: both;
+    position: absolute;
+    top: 0;
+    left: -111px;
+    z-index: 5;
+    width: 111px;
+    height: 0;
+    border-top: 220px solid rgba(22,27,49,0.88);
+    border-left: 65px solid transparent;}
+.rent-a-car-inside form:after {
+	content: '';
+    display: block;
+    clear: both;
+    position: absolute;
+    top: 0px;
+    left: -118px;
+    z-index: 4;
+    width: 40px;
+    height: 220px;
+    transform: skew(16.4deg);
+    background: rgba(22,27,49,0.38);}
+.rent-a-car-inside form .first-field:before {content: ''; display: block; clear: both; position: absolute; bottom: -56px; left: -30px; z-index: 4;
+    width: 0; height: 0; border-left: 10px solid transparent;  border-top: 30px solid rgba(22,27,49,0.88);}
+
+/*Webpage Path*/
+.webpage-path {margin-top: 110px;}
+.webpage-path ol {margin: 7px 0;}
+.webpage-path ol li {display: inline-block; position: relative; padding-left: 15px;}
+.webpage-path ol li:first-child {padding-left: 0;}
+.webpage-path ol li a {color: #525252;}
+.webpage-path ol li a:hover {color: #292d40; text-decoration: none;}
+.webpage-path ol li:after {content: ''; width: 1px; height: 16px; border-right: 1px solid #525252; position: absolute; top: 3px; right: -10px;
+	-moz-transform: rotate(25deg);
+	-webkit-transform: rotate(25deg);
+	-o-transform: rotate(25deg);
+	-ms-transform: rotate(25deg);
+	transform: rotate(25deg);}
+.webpage-path ol li:last-child:after {display: none;}
+.webpage-path-inside {border-bottom: 1px solid #aeaeae;}
+
+/*Webpage title*/
+.page-title {font-weight: 900; text-align: center; margin-top: 45px; background-color: #fff; padding: 5px; font-size: 28px; margin-bottom: 50px;}
+.page-title:before {content: ""; position: absolute; display: block; top: 28px;	height: 80px; width: 80px; border: 1px solid #b1b0b0;
+	border-radius: 50%;	left: 50%;	margin-left: -40px;	z-index: -1;}
+.page-title:after {content: ""; position: absolute; display: block; top: 38px; height: 60px; width: 60px; border: 1px solid #b1b0b0; border-radius: 50%;
+	left: 50%; margin-left: -30px; z-index: -1;}
+	
+/*Section Contacts-detail*/
+.contacts-detail form {width: 60%; margin: auto; margin-top: 30px;}
+.contacts-detail form p {text-align: center; padding: 0 90px;}
+.contacts-detail form .field  {float: left; width: 50%; padding: 0 10px;}
+.contacts-detail form .field input, .contacts-detail form .field textarea {width: 100%; padding: 8px; margin-bottom: 20px;}
+.contacts-detail form .field textarea {height: 115px;}
+.contacts-detail form .field span {color: #b60526; font-weight: bold;}
+.g-recaptcha {margin: 17px 0 20px 0; width: 304px; margin: 0 auto;}
+.contacts-detail form .button-submit {display: block; border: none; padding: 15px 0px; background-color: #b60526; color: #fff; font-weight: bold;
+    text-transform: uppercase; margin: 0 auto; width: 125px; margin-top: 20px;}
+.contacts-detail form .button-submit:hover {background-color: #950b25;}
+	
+

@@ -1,0 +1,101 @@
+@charset "utf-8";
+
+/*Section Map Contacts*/
+.contacts { display: block; position: relative; clear: both; border-top: 50px solid #fff;}
+.contacts .image-canvas	{display: block; width: 100%; height: 100%; position: absolute; bottom: 0; left: 0; background-color: #ceead6;}
+.contacts .image-canvas img {width: 100%;}
+.contacts .contact-details {position: relative; width: 40%; float: left; height: 397px; background-color: rgba(22,27,49,0.88);}
+.contacts .contact-details .small-logo {position: absolute; top: 80px; left: 25px;}
+.contacts .contact-details .address	{position: relative; color: #fff; 
+    left: 0;
+    top: 0;
+    padding: 80px 20px 20px 140px;}
+.contacts .contact-details .address	.contacts-title {font-size: 16px; font-weight: 900; margin: 0 0 35px 0;}
+.contacts .contact-details .address p {margin: 5px 0;}
+.contacts .contact-details .address .phone {font-size: 18px; font-weight: bold;}
+.contacts .contact-details .address .phone a {color: #fff;}
+.contacts .contact-details .address .followus a {display: inline-block; width: 32px; height: 32px; overflow: hidden; text-align: center;
+    font-size: 18px; line-height: 26px; color: #fff; margin-left: 10px; position: relative;}
+.contacts .contact-details .address .followus a:first-child {margin-left: 0;}
+.contacts .contact-details .address .followus a {height: 30px; width: 30px; background-color: rgba(182, 5, 38, 1); border-radius: 50%;
+    display: inline-block; line-height: 30px;}
+.contacts .contact-details:before {content: ''; display: block; clear: both; position: absolute; top: 220px; right: -45px; width: 0; height: 0;
+    border-top: 178px solid rgba(22,27,49,0.88); border-right: 45px solid transparent;}
+.contacts .contact-details:after {    
+	content: '';
+    display: block;
+    clear: both;
+    position: absolute;
+    top: 0;
+    right: -141px;
+    z-index: 5;
+    width: 141px;
+    height: 62px;
+    border-top: 220px solid rgba(22,27,49,0.88);
+    border-right: 66px solid transparent;}
+.contacts .contact-details .address:before {    
+	content: '';
+    display: block;
+    clear: both;
+    position: absolute;
+    top: 0;
+    right: -142px;
+    z-index: 1;
+    width: 35px;
+    height: 220px;
+    transform: skew(-16.8deg);
+    background: rgba(22,27,49,0.38);}
+.contacts .contact-details .address:after {
+	content: '';
+    display: block;
+    clear: both;
+    position: absolute;
+    top: 220px;
+    right: -52px;
+    z-index: 1;
+    width: 30px;
+    height: 177px;
+    transform: skew(-14.1deg);
+    background: rgba(22,27,49,0.38);}
+.payment {float: left; width: 100%; text-align: center; margin-bottom: 20px;}
+.payment .card {float: left; margin-top: 25px;}
+.payment .bank {float: right; margin-top: 25px;}
+
+/*Form Content*/
+.blue-form {background-color: rgba(22,27,49,0.88);}
+.form-content {width: 800px; margin: 0 auto; color: #fff;}
+.form-content h1 {font-size: 24px; font-weight: 900; text-transform: uppercase; text-align: center; 
+	padding-top: 50px;}
+.form-content form {width: 100%; position: relative; padding-top: 30px;}
+.form-content form .field {float: left; width: 33.33%; margin-bottom: 20px; position: relative; padding-left: 30px;}
+.form-content form .field:first-child {padding-left: 0;}
+.form-content form .field select {width: 100%; height: 30px; margin: 5px 0;}
+.form-content form .button-search {float: right;}
+.form-content form .button-search .button-submit {display: block; font-weight: bold; padding: 10px 30px; border: none; 
+	background-color: #b60526; color: #fff; text-transform: uppercase; text-decoration: none;}
+.form-content form .button-search .button-submit:hover	{background-color: #950b25;}
+.form-content form p {width: calc(800px - 33.33%); font-style: italic; display: inline-block; margin: 0;
+    background-color: #d0d8fa; padding: 5px; color: #282d40;}
+.form-content-second form .field {width: 50%; margin-bottom: 0;}
+.form-content-second form .field input {width: 100%; height: 30px; margin: 5px 0;}
+.star {color: #b60526;}
+.form-content-second textarea {width: 100%; height: 100px; padding: 10px; margin: 5px 0; font-style: italic;}
+.form-content-second .check {float: left; width: 50%; padding-left: 30px;}
+.form-content-second .check:first-of-type {padding-left: 0;}
+.form-content-second .check input {margin-right: 10px; vertical-align: middle;}
+.form-content-second form .button-search {width: 100%; margin-top: 30px;}
+.form-content-second form .button-search .button-submit {margin: 0 auto;}
+.form-content-third .column {float: left; width: 50%; position: relative; padding-left: 30px;}
+.form-content-third .column:first-of-type {padding-left: 0; border-right: 1px solid #cccccc;}
+.form-content-third .column h3 {font-size: 18px;}
+.form-content-third .column .car-details {padding-left: 0; min-height: auto;}
+.form-content-third .column .car-details i, .form-content-third .column .car-details span {color: #fff;}
+.form-content-third .column .button-submit	{display: block; font-weight: bold; padding: 10px 25px; border: none; background-color: #fff;
+    color: #292d40; text-decoration: none;}
+.form-content-third .column .button-submit:hover {background-color: #d2cbcb;}
+.form-content-third .column .button-search	{margin: 15px 0 35px 0;}
+.form-content-third .column .big-date {font-weight: 600; font-size: 18px;}
+.form-content-third .column p {margin: 0;}
+.form-content-third .column p .big-price {font-size: 24px; font-weight: bold;}
+.form-content-third .column .button-pay {padding: 10px 50px; text-transform: uppercase; background-color: #b60526; color: #fff; font-size: 20px;}
+.form-content-third .column .button-pay:hover {background-color: #950b25;}
